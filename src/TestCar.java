@@ -1,14 +1,12 @@
 import org.junit.jupiter.api.Test;
-
 import java.awt.*;
 
-class TestBus {
-
+class TestCar {
 
 
     @Test
     void testBus() {
 
-        Bus bus = new Bus(3, 5, "Bike", Color.green);
+        Car car = new Car(5, 0, "Bike", Color.green);
     }
 }
