@@ -2,20 +2,19 @@ import java.awt.*;
 
 class Vehicle {
 
-    private int positionAtX;
-    private int getPositionAtY;
+    private int startPointX;
+    private int startPointy;
     private String name;
     private Color color;
+    private int speed;
 
-    public Vehicle(int positionAtX, int positionAtY, String name, Color color){
-        this.positionAtX = positionAtX;
-        this.getPositionAtY = positionAtY;
+    public Vehicle(int startPointX, int startPointy, String name, Color color, int speed) {
+
+        this.startPointX = startPointX;
+        this.startPointy = startPointy;
         this.name = name;
         this.color = color;
-
+        this.speed= speed;
 
     }
-
-
-
 }

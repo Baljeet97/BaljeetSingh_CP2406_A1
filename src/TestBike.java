@@ -7,6 +7,6 @@ class TestBike {
     @Test
     void bikeTest() {
 
-        Bike bike = new Bike(0, 2, "Bike", Color.BLUE);
+        Bike bike = new Bike(0, 2, "Bike", Color.BLUE, 50);
     }
 }
