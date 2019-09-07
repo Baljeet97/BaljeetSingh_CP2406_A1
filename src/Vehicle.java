@@ -36,12 +36,12 @@ class Vehicle {
         return speed;
     }
 
-    int moveCar() {
+    int moveCar() { //moving vehicle by step at a time
         startPointy += speed;
         return startPointy;
     }
 
-    int stopCar() {
+    int stopCar() { //stopping car
         return startPointy;
     }
 }
