@@ -1,6 +1,6 @@
 import java.awt.*;
 
-class Vehicle {
+public class Vehicle {
 
     private int startPointX;
     private int startPointy;
@@ -9,14 +9,9 @@ class Vehicle {
     private int speed;
     private int size;
 
-    public Vehicle(int startPointX, int startPointy, String name, Color color, int speed, int size) {
-
-        this.startPointX = startPointX;
-        this.startPointy = startPointy;
-        this.name = name;
-        this.color = color;
-        this.speed = speed;
-        this.size = size;
+    public Vehicle(){
+        setSize(1);
+        setSpeed(0);
 
     }
 
@@ -26,6 +21,18 @@ class Vehicle {
 
     public int getStartPointy() {
         return startPointy;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public void setSpeed(int speed) {
+        this.speed = speed;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
     }
 
     public void setStartPointy(int startPointy) {
