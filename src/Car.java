@@ -1,7 +1,9 @@
 import java.awt.*;
 
-public class Car extends Vehicle {
-    public Car(int positionAtX, int positionAtY, String name, Color color, int speed) {
-        super(positionAtX, positionAtY, name, color, speed);
+public class Car extends Vehicle{
+
+
+    public Car(int startPointX, int startPointy, String name, Color color, int speed, int size) {
+        super(startPointX, startPointy, name, color, speed, size);
     }
 }
