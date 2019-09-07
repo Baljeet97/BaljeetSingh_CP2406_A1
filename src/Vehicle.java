@@ -15,7 +15,7 @@ class Vehicle {
         this.startPointy = startPointy;
         this.name = name;
         this.color = color;
-        this.speed= speed;
+        this.speed = speed;
         this.size = size;
 
     }
@@ -36,14 +36,12 @@ class Vehicle {
         return speed;
     }
 
-    int moveCar(){
+    int moveCar() {
         startPointy += speed;
         return startPointy;
-
     }
 
-    int stopCar(){
+    int stopCar() {
         return startPointy;
-
     }
 }
