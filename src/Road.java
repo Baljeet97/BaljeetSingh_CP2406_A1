@@ -43,5 +43,12 @@ public class Road {
         return lengthOfRoad;
     }
 
+    public int endOfX() {
+        return (getPositionAtX() + lengthOfRoad);
+    }
+
+    public int endOfY() {
+        return (getGetPositionAty() + heightOfRoad);
+    }
 
 }

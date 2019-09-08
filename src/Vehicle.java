@@ -3,13 +3,13 @@ import java.awt.*;
 public class Vehicle {
 
     private int startPointX;
-    private int startPointy;
+    private int startPointY;
     private String name;
     private Color color;
     private int speed;
     private int size;
 
-    public Vehicle(){
+    public Vehicle() {
         setSize(1);
         setSpeed(0);
 
@@ -19,8 +19,8 @@ public class Vehicle {
         return startPointX;
     }
 
-    public int getStartPointy() {
-        return startPointy;
+    public int getStartPointY() {
+        return startPointY;
     }
 
     public int getSize() {
@@ -35,20 +35,20 @@ public class Vehicle {
         this.size = size;
     }
 
-    public void setStartPointy(int startPointy) {
-        this.startPointy = startPointy;
+    public void setStartPointY(int startPointy) {
+        this.startPointY = startPointy;
     }
 
     public int getSpeed() {
         return speed;
     }
 
-    int moveCar() { //moving vehicle by step at a time
-        startPointy += speed;
-        return startPointy;
+    int moveCar() { //moving vehicle by a step at a time
+        startPointY += speed;
+        return startPointY;
     }
 
-    int stopCar() { //stopping car
-        return startPointy;
+    int stopCar() { //stopping Vehicle
+        return startPointY;
     }
 }
