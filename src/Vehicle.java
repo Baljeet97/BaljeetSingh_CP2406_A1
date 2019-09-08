@@ -10,8 +10,8 @@ public class Vehicle {
     private int size;
 
     public Vehicle() {
-        setSize(1);
-        setSpeed(0);
+        setSize(3);
+        setSpeed(1);
 
     }
 
