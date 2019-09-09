@@ -4,8 +4,8 @@ public class Vehicle {
 
     private int startPointX;
     private int startPointY;
-    private String name;
-    private Color color;
+    private String name = "Mustang";
+    private Color color = Color.BLACK;
     private int speed;
     private int size;
 
@@ -42,6 +42,27 @@ public class Vehicle {
     public int getSpeed() {
         return speed;
     }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setStartPointX(int startPointX) {
+        this.startPointX = startPointX;
+    }
+
 
     int moveCar() { //moving vehicle by a step at a time
         startPointY += speed;
