@@ -3,15 +3,15 @@ public class Road {
     private int lengthOfRoad;
     private int heightOfRoad;
     private int positionAtX;
-    private int getPositionAty;
+    private int PositionAty;
     private int road;
 
 
-    public Road(int lengthOfRoad, int heightOfRoad, int positionAtX, int getPositionAty, int road) {
+    public Road(int lengthOfRoad, int heightOfRoad, int positionAtX, int PositionAty, int road) {
         this.lengthOfRoad = lengthOfRoad;
         this.heightOfRoad = heightOfRoad;
         this.positionAtX = positionAtX;
-        this.getPositionAty = getPositionAty;
+        this.PositionAty = PositionAty;
         this.road = road;
     }
 
@@ -31,16 +31,24 @@ public class Road {
         this.positionAtX = positionAtX;
     }
 
-    public void setGetPositionAty(int getPositionAty) {
-        this.getPositionAty = getPositionAty;
+    public void setPositionAty(int positionAty) {
+        PositionAty = positionAty;
     }
 
-    public int getGetPositionAty() {
-        return getPositionAty;
+    public int getPositionAty() {
+        return PositionAty;
     }
 
     public int getLengthOfRoad() {
         return lengthOfRoad;
+    }
+
+    public void setHeightOfRoad(int heightOfRoad) {
+        this.heightOfRoad = heightOfRoad;
+    }
+
+    public int getHeightOfRoad() {
+        return heightOfRoad;
     }
 
     public int endOfX() {
@@ -48,7 +56,7 @@ public class Road {
     }
 
     public int endOfY() {
-        return (getGetPositionAty() + heightOfRoad);
+        return (getPositionAty() + heightOfRoad);
     }
 
 }
