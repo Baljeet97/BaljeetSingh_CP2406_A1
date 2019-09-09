@@ -1,13 +1,15 @@
 import org.junit.jupiter.api.Test;
 
-import java.awt.*;
+import static org.junit.jupiter.api.Assertions.*;
+
 
 class TestCar {
-
 
     @Test
     void testBus() {
 
-        Car car = new Car(5, 0, "Bike", Color.green, 10);
+        Car car = new Car();
+        assertEquals(1, car.getSpeed());
+
     }
 }
