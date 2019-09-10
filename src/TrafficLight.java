@@ -1,24 +1,31 @@
 import java.util.Random;
 
 public class TrafficLight {
+    private Random rand = new Random();
+    private int state = 0; // red
+    private int trafficState;
 
-    public TrafficLight(boolean isGreen, boolean isRed) {
 
+    public int getState() {
+        return state;
     }
 
-    /*Adding Randomness to traffic lights */
-    static int trafficController() {
-        Random rand = new Random();
-        int lightStatus = rand.nextInt(2);//0 = red, 1= green
-
-        if (lightStatus == 0) {
-            System.out.println("light is red");
-
-        } else System.out.println("light is green");
-
-        return lightStatus;
+    public void setState() {
+        this.setTrafficState();
+        if (trafficState == 0) {
+            state = 0;
+        } else {
+            state = 1;
+        }
     }
 
+    public int getTrafficState() {
+        return trafficState;
+    }
+
+    public void setTrafficState() {
+        this.trafficState = rand.nextInt(2);
+    }
 }
 
 
