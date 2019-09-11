@@ -1,62 +1,47 @@
 public class Road {
 
     private int lengthOfRoad;
-    private int heightOfRoad;
+    private int roadSegment;
     private int positionAtX;
-    private int PositionAty;
+    private int positionAtY;
     private int road;
 
-
-    public Road(int lengthOfRoad, int heightOfRoad, int positionAtX, int PositionAty, int road) {
+    public Road(int lengthOfRoad, int roadSegment, int positionAtX, int positionAtY, int road) {
         this.lengthOfRoad = lengthOfRoad;
-        this.heightOfRoad = heightOfRoad;
+        this.roadSegment = roadSegment;
         this.positionAtX = positionAtX;
-        this.PositionAty = PositionAty;
+        this.positionAtY = positionAtY;
         this.road = road;
     }
 
-    public void setRoad(int road) {
-        this.road = road;
-    }
 
-    public int getRoad() {
+    int getRoad() {
         return road;
     }
 
-    public int getPositionAtX() {
+    int getPositionAtX() {
         return positionAtX;
     }
 
-    public void setPositionAtX(int positionAtX) {
-        this.positionAtX = positionAtX;
+    int getPositionAtY() {
+        return positionAtY;
     }
 
-    public void setPositionAty(int positionAty) {
-        PositionAty = positionAty;
-    }
-
-    public int getPositionAty() {
-        return PositionAty;
-    }
-
-    public int getLengthOfRoad() {
+    int getLengthOfRoad() {
         return lengthOfRoad;
     }
 
-    public void setHeightOfRoad(int heightOfRoad) {
-        this.heightOfRoad = heightOfRoad;
+    int getRoadSegment() {
+        return roadSegment;
     }
 
-    public int getHeightOfRoad() {
-        return heightOfRoad;
-    }
-
-    public int endOfX() {
+    int endOfX() {
         return (getPositionAtX() + lengthOfRoad);
     }
 
-    public int endOfY() {
-        return (getPositionAty() + heightOfRoad);
+    int endOfY() {
+        return (getPositionAtY() + roadSegment);
     }
 
 }
+

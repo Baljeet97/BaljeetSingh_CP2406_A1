@@ -1,75 +1,49 @@
-import java.awt.*;
-
-public class Vehicle {
-
+class Vehicle {
     private int startPointX;
     private int startPointY;
-    private String name = "Mustang";
-    private Color color = Color.BLACK;
-    private int speed;
     private int size;
+    private int speed;
+    private String color;
 
-    public Vehicle() {
-        setSize(3);
-        setSpeed(1);
-
-    }
-
-    public int getStartPointX() {
-        return startPointX;
-    }
-
-    public int getStartPointY() {
-        return startPointY;
-    }
-
-    public int getSize() {
-        return size;
-    }
-
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
-    public void setSize(int size) {
+    Vehicle(int size, int startPointX, int startPointY, int speed, String color) {
         this.size = size;
-    }
-
-    public void setStartPointY(int startPointy) {
-        this.startPointY = startPointy;
-    }
-
-    public int getSpeed() {
-        return speed;
-    }
-
-    public void setColor(Color color) {
+        this.startPointX = startPointX;
+        this.startPointY = startPointY;
+        this.speed = speed;
         this.color = color;
     }
 
-    public Color getColor() {
+    int getStartPointX() {
+        return startPointX;
+    }
+
+    int getStartPointY() {
+        return startPointY;
+    }
+
+    void setStartPointY() {
+        this.startPointY = 0;
+    }
+
+    int getSpeed() {
+        return speed;
+    }
+
+    int getSize() {
+        return size;
+    }
+
+    String getColor() {
         return color;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setStartPointX(int startPointX) {
-        this.startPointX = startPointX;
-    }
-
-
-    int moveCar() { //moving vehicle by a step at a time
+    int moveCar() {
         startPointY += speed;
         return startPointY;
     }
 
-    int stopCar() { //stopping Vehicle
+    int stopCar() {
         return startPointY;
     }
+
 }
