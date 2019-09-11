@@ -4,7 +4,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class TestBus {
 
-
     @Test
     void testBus() {
 
