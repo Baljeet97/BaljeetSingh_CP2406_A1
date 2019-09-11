@@ -1,4 +1,3 @@
-
 public class Bus extends Vehicle {
 
     int size = super.getSize() * 3;
