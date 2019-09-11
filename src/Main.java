@@ -22,7 +22,7 @@ public class Main {
             System.out.println("-------End of Road " + road1.getRoad() + " " + light.lightStatus + " Car is stopped" + "-------");
 
         } else if (light.getState() == 1) {
-            System.out.println("--------------light is green at the end of the Road 1--------------");
+            System.out.println("--------------light is green at the end of the Road "+ road1.getRoad()+"--------------");
         }
 
         if (car.getStartPointY() == road2.getPositionAtY()) {
