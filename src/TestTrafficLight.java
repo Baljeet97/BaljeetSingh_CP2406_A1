@@ -11,8 +11,6 @@ class TestTrafficLight {
         light.setState();
         boolean check = (light.getState() == 0 || light.getState() == 1);
         assertTrue(check);
-
-
     }
 
 }

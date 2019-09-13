@@ -1,0 +1,41 @@
+The Working Document:
+To plan out the software development process, your working document is expected to describe the following:
+
+Problem specification:
+
+1.What exactly is the problem?
+Problem is to design a Car traffic simulator based on Australian road rules. This is relate near to the real traffic situations.
+In which car appears randomly on the road. Vehicle should be of three types bus, car, motorbike.
+Vehicles are not supposed to crash into each other’s. There is speed limit to be followed be vehicles. Car should follow road rules, like it should follow the traffic light.
+If the light is red car should stop, and only go when the light is green and slow down when light is yellow. The view is top down only.
+
+2.How will the program be used?
+This program will be used to monitor traffic on the road.
+It can be run from main. It will monitor speed of the vehicles and number of vehicles on the road as well.
+
+3.How will the program behave?
+It will behave closer to the real-life traffic situations, where vehicles will be following the road rules. All the classes will behave according to their defined functionality.
+Like traffic light will be monitoring and changing the state of the lights.
+And road will take account of the cars on the road.
+
+Problem decomposition using UML class diagrams:
+
+1.What objects will be used and how will they interact?
+    a.	Objects – Vehicle, Traffic Light, Road
+    b.	Vehicle and road interact with each other. vehicle will be placed on at the start of the road. Traffic light with be placed at the end of the first road.
+    Car will be interacting with traffic light, car will move, slow down or stop according to the state of the traffic lights.
+
+2.Divide the problem into objects.
+The problem is divided into various objects like: main, Traffic light, vehicle, car, bus, motorbike and road.
+
+    a. main will be used to run this simulation. which will depend on the vehicle, status of the light, and the road.
+    b. Vehicle will depend on the road. if there is no road there will be no traffic lights and vehicle.
+    c. Car, bus and bike will inherit the properties of the vehicle like start point, speed, color, but each object will have different properties.
+
+The UML diagram should be able to give a clear view of how the methods will interact.
+And UML will show what member fields and methods are private, public or package-private.
+
+Most of the member fields are private because they should not be accessible directly by other classes.
+Most of the methods are package-private.
+
+
