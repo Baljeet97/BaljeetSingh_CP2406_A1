@@ -26,7 +26,7 @@ public class Main {
             System.out.println("--------------light is green at the end of the Road " + road1.getRoad() + " --------------");
         }
 
-        if (car.getStartPointY() == road2.getEndOfRoad()) { // if car finished road 1
+        if (car.getStartPointY() == road2.getEndOfRoad()) { // if car is at end of road 1
             car.setStartPointY();
             System.out.println("----------------Car continued onto Road " + road2.getRoad() + "----------------");
             while (car.getStartPointX() <= road2.endOfX() && car.getStartPointY() <= road2.endOfY()) { // if car is not outside road 2
