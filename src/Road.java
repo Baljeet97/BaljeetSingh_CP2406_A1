@@ -1,30 +1,30 @@
 public class Road {
+    /* Creating Road*/
 
     private int lengthOfRoad;
     private int roadSegment;
-    private int positionAtX;
-    private int positionAtY;
+    private int startOfRoad;
+    private int endOfRoad;
     private int road;
 
-    public Road(int lengthOfRoad, int roadSegment, int positionAtX, int positionAtY, int road) {
+    public Road(int lengthOfRoad, int roadSegment, int startOfRoad, int endOfRoad, int road) {
         this.lengthOfRoad = lengthOfRoad;
         this.roadSegment = roadSegment;
-        this.positionAtX = positionAtX;
-        this.positionAtY = positionAtY;
+        this.startOfRoad = startOfRoad;
+        this.endOfRoad = endOfRoad;
         this.road = road;
     }
-
 
     int getRoad() {
         return road;
     }
 
-    int getPositionAtX() {
-        return positionAtX;
+    int getStartOfRoad() {
+        return startOfRoad;
     }
 
-    int getPositionAtY() {
-        return positionAtY;
+    int getEndOfRoad() {
+        return endOfRoad;
     }
 
     int getLengthOfRoad() {
@@ -35,12 +35,12 @@ public class Road {
         return roadSegment;
     }
 
-    int endOfX() {
-        return (getPositionAtX() + lengthOfRoad);
+    int endOfX() { //
+        return (getStartOfRoad() + lengthOfRoad);
     }
 
-    int endOfY() {
-        return (getPositionAtY() + roadSegment);
+    int endOfY() { //
+        return (getEndOfRoad() + roadSegment);
     }
 
 }

@@ -1,4 +1,6 @@
 class Vehicle {
+    /*Creating vehicle*/
+
     private int startPointX;
     private int startPointY;
     private int size;
@@ -37,12 +39,12 @@ class Vehicle {
         return color;
     }
 
-    int moveCar() {
+    int moveCar() { // Moving car by one step at a time
         startPointY += speed;
         return startPointY;
     }
 
-    int stopCar() {
+    int stopCar() { //stopping car
         return startPointY;
     }
 
